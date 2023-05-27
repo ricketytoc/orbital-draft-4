@@ -1,0 +1,314 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  padding: 0 16px;
+}
+
+header {
+  background-color: #6495ed;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "Times New Roman", Serif;
+  font-weight: 200;
+}
+
+h2 {
+  color: #6495ed;
+  font-size: 3rem;
+  padding: 40px 0;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+form.create-note {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+.login {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputDetails {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding: 10px 0 40px 0;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  flex: 1;
+}
+
+.nav-bar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-bar li {
+  list-style: none;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.nav-bar li:hover {
+  background-color: darkblue;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  border-radius: 20%;
+}
+
+@media (max-width: 500px) {
+  .nav-menu {
+    position: absolute;
+    display: flex;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+  }
+}
+
+#stock-img {
+  width: 100vw;
+}
+
+body {
+  padding: 0;
+}
+
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+  gap: 25px;
+}
+
+.quote-box {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 3fr 1fr;
+}
+
+.quote {
+  font-family: "Times New Roman", serif;
+  color: #6495ed;
+  font-size: 1.5rem;
+}
+
+.author {
+  font-family: "Times New Roman", serif;
+  color: #6495ed;
+  font-size: 1rem;
+}
+
+.quote-box img {
+  height: 10rem;
+  width: 8rem;
+}
+
+.quote-author-img-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.quote-words {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.brand > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#about-title {
+  font-family: "Helvetica", sans-serif;
+  padding: 1rem;
+  font-size: 5em;
+}
+
+.function-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 1.5rem;
+  gap: 10rem;
+}
+
+.function-box {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.function-text-image {
+  display: flex;
+  gap: 3rem;
+}
+
+.function-text-image > div > img {
+  width: 8rem;
+  height: 10rem;
+}
+
+.function-text-image > div > p {
+  flex-basis: 400px;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.function-text-image > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.function-box > p {
+  font-family: "Times New Roman", serif;
+  color: darkblue;
+  font-size: 3rem;
+}
+
+.sign-up {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sign-up-input-details {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  padding: 10px 0 40px 0;
+}
